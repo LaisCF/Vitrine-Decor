@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Vitrine Decor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu de Navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PortalVitrineDecor</div>
+            <ul class="nav-links">
+                <li><button class="nav-btn active" data-target="home">Início</button></li>
+                <li><button class="nav-btn" data-target="galeria">Galeria</button></li>
+                <li><button class="nav-btn" data-target="contato">Contato</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- Home -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <h1>Transformamos momentos em cenários inesquecíveis</h1>
+                <p>Formada por prestigiadas escolas europeias como a Escola Catalúnia e Fiore di Fiore, Simone
+                    Carvalho traduz sua bagagem internacional em uma assinatura única. À frente de seu estúdio,
+                    ela cria projetos florais autênticos e elegantes, transformando cores e texturas em atmosferas
+                    inesquecíveis.</p>
+            </div>
+        </section>
+
+        <!-- Aba: Galeria com "Pastas" -->
+        <section id="galeria" class="tab-content">
+            <h2>Nossa Galeria</h2>
+            <p>Filtre o conteúdo navegando pelas pastas abaixo:</p>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="eventos">Eventos</button>
+                <button class="filter-btn" data-filter="casamentos">Casamentos</button>
+                <button class="filter-btn" data-filter="aniversarios">Aniversários</button>
+            </div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item" data-category="eventos">
+                    <img src="img/evento1.jpg" alt="Evento 1">
+                </div>
+
+                <div class="gallery-item" data-category="eventos">
+                    <img src="img/evento8.jpg" alt="Evento 2">
+                </div>
+
+                <div class="gallery-item" data-category="eventos">
+                    <img src="img/evento10.jpg" alt="Evento 3">
+                </div>
+
+                <div class="gallery-item" data-category="eventos">
+                    <img src="img/evento4.jpg" alt="Evento 4">
+                </div>
+
+                <div class="gallery-item" data-category="eventos">
+                    <img src="img/evento5.jpg" alt="Evento 5">
+                </div>
+
+                <div class="gallery-item" data-category="eventos">
+                    <img src="img/evento11.jpg" alt="Evento 6">
+                </div>
+
+                <div class="gallery-item" data-category="casamentos">
+                    <img src="img/casamento1.jpg" alt="casamentos 1">
+                </div>
+
+                <div class="gallery-item" data-category="casamentos">
+                    <img src="img/casamento2.png" alt="casamentos 2">
+                </div>
+
+                <div class="gallery-item" data-category="casamentos">
+                    <img src="img/casamento3.png" alt="casamentos 3">
+                </div>
+
+                <div class="gallery-item" data-category="casamentos">
+                    <img src="img/casamento4.png" alt="casamentos 4">
+                </div>
+
+                <div class="gallery-item" data-category="casamentos">
+                    <img src="img/casamento5.jpg" alt="casamentos 5">
+                </div>
+
+                <div class="gallery-item" data-category="casamentos">
+                    <img src="img/casamento6.jpg" alt="casamentos 6">
+                </div>
+
+                <div class="gallery-item" data-category="aniversarios">
+                    <img src="img/aniversario1.jpg" alt="aniversarios 1">
+                </div>
+
+                <div class="gallery-item" data-category="aniversarios">
+                    <img src="img/aniversario3.jpg" alt="aniversarios 2">
+                </div>
+
+                <div class="gallery-item" data-category="aniversarios">
+                    <img src="img/aniversario4.jpg" alt="aniversarios 3">
+                </div>
+
+                <div class="gallery-item" data-category="aniversarios">
+                    <img src="img/aniversário2.jpg" alt="aniversarios 4">
+                </div>
+
+                <div class="gallery-item" data-category="aniversarios">
+                    <img src="img/aniversario5.jpg" alt="aniversarios 5">
+                </div>
+
+                <div class="gallery-item" data-category="aniversarios">
+                    <img src="img/aniversario6.jpg" alt="aniversarios 6">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="tab-content">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou deseja fazer um orçamento? Digite sua mensagem abaixo e fale comigo diretamente pelo
+                WhatsApp.</p>
+
+            <div class="contact-box">
+                <div class="form-group">
+                    <label for="whatsapp-message">Sua Mensagem:</label>
+                    <textarea id="whatsapp-message"
+                        placeholder="Olá! Gostaria de saber mais sobre o projeto..."></textarea>
+                </div>
+
+                <button id="send-whatsapp-btn" class="whatsapp-btn">
+                    Enviar para o WhatsApp
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="gallery-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" src="" alt="Imagem ampliada">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
